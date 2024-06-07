@@ -180,8 +180,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.oplus \
-    libshims_fingerprint.oplus
+    android.hardware.biometrics.fingerprint@2.3-service.oplus 
 
 
 PRODUCT_COPY_FILES += \
