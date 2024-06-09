@@ -60,6 +60,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        odm/bin/oplus_sensor_fb
+	grep -q liboplus_service.so"${2}" || "${PATCHELF}" --add-needed liboplus_service.so "${2}"
+            ;;
         odm/etc/camera/CameraHWConfiguration.config)
             sed -i "/SystemCamera = / s/1;/0;/g" "${2}"
             ;;
